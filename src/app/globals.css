@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
+.decorateLineGray {
+    border-bottom: 1px solid #d1d1d1;
+    width: 100px;
+    margin: auto;
+    z-index: 1;
+}
+
+.decorateLineOrange{
+    border-bottom: 3px solid #f77902;
+    width: 40px;
+    margin: auto;
+    z-index: 2;
+}
+.parallax {
+  /* The image used */
+  background-image: url(https://picsum.photos/id/443/1000/1000);
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
